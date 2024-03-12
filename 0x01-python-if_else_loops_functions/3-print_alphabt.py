@@ -3,4 +3,4 @@ for char in range(97, 123):
     if char in(101, 113):
         continue
     else:
-        print("{}".format(chr(char)), end="")
+        print("{}".format(chr(char)), end = "")
