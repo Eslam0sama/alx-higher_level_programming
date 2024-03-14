@@ -5,30 +5,44 @@
  * @number: The new number to be added
  * Return: the address of the new node
  */
-
-
 listint_t *insert_node(listint_t **head, int number)
 {
-
-	listint_t *current, *temp, *new_node;
+	listint_t *current, *temp;
 
 	current = *head;
-
-	new_node = malloc(sizeof(listint_t));
+	listint_t *new_node = malloc(sizeof(listint_t));
 
 	if (new_node == NULL)
 	{
 		return (NULL);
 	}
 	new_node->n = number;
-
-	while (current->n < number)
+	new_node->next = NULL;
+	if (*head == NULL)
 	{
-		temp = current;
-		current = current->next;
+		*head = new_node;
+		return (new_node);
 	}
-	temp->next = new_node;
-	new_node->next = current;
+	else if (current->next == NULL && current->n < number)
+	{
+		current->next = new_node;
+		return (current->next);
+	}
+	else if (current->next == NULL && current->n > number)
+	{
+		new_node->next = *head;
+		*head = new_node;
 
-	return (temp->next);
+	}
+	else
+	{
+		while (current->n < number)
+		{
+			temp = current;
+			current = current->next;
+		}
+		temp->next = new_node;
+		new_node->next = current;
+		return (temp->next);
+	}
 }
