@@ -1,4 +1,4 @@
-import add_0
+add = __import__ add_0.py
 
 a = 1
 b = 2
