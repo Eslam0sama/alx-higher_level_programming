@@ -25,7 +25,7 @@ You can find more information about its attributes and methods below.
         self.__height = height
 
     @property
-    def width(self, value):
+    def width(self):
         """A fucntion that retrieves the object width
 
         Args:
@@ -48,7 +48,7 @@ You can find more information about its attributes and methods below.
             self.__width = value
 
     @property
-    def height(self, value):
+    def height(self):
         """A fucntion that retrieves the object height
 
         Args:
