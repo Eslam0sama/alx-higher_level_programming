@@ -45,7 +45,7 @@ You can find more information about its attributes and methods below.
         elif value < 0:
             raise ValueError("width must be >= 0")
         else:
-            value = self.__width
+            self.__width = value
 
     @property
     def height(self, value):
@@ -68,4 +68,4 @@ You can find more information about its attributes and methods below.
         elif value < 0:
             raise ValueError("height must be >= 0")
         else:
-            value = self.__height
+            self.__height = value
