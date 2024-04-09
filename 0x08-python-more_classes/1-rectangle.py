@@ -30,6 +30,8 @@ You can find more information about its attributes and methods below.
 
         Args:
             value (int): Width's value
+	Returns: 
+        int: The width of the object
         """
         return self.__width
 
@@ -53,6 +55,8 @@ You can find more information about its attributes and methods below.
 
         Args:
             value (int): height's value
+	Returns: 
+        int: The height of the object
         """
         return self.__height
 
