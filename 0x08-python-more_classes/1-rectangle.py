@@ -13,7 +13,7 @@ This class represents a Rectangle object.
 You can find more information about its attributes and methods below.
 
 """
-    def __init__(self, width, height):
+    def __init__(self, width=0, height=0):
         """A function that initialize an Rectangle instance.
 
         Args:
