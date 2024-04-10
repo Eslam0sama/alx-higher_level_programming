@@ -1,0 +1,98 @@
+>>> add_integer = __import__("0-add_integer").add_integer
+
+# Normal_case
+>>> add_integer(1, 2)
+3
+
+# Add negative number as first argument
+>>> add_integer(-8)
+90
+
+# Add negative number as second argument
+>>> add_integer(8, -8)
+0
+
+# Add zero number
+>>> add_integer(100, 0)
+100
+
+# Add number divided by zero
+>>> add_integer(5/0)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero
+
+
+# Add only The first number as integer
+>>> add_integer(2)
+100
+
+# Add the two numbers as floats
+>>> add_integer(2.3, 3.1)
+5
+
+# Add the first number as float
+>>> add_integer(2.3)
+100
+
+# Add the first number as float and the second as integer
+>>> add_integer(2.5, 3)
+5
+
+# Add the first number as integer and the second as float
+>>> add_integer(3, 2.5)
+5
+
+# Add string in the first argument
+>>> add_integer("dog")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+# Add string in the first argument
+>>> add_integer(5, "dog")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+# Add the first number as None
+>>> add_integer(None, 5)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+# Add the second number as None
+>>> add_integer(5, None)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+# Add None
+>>> add_integer(None)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+# Add list as first argument
+>>> add_integer([5, 6])
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+# Add only the second argument
+>>> add_integer(, 2)
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
+
+# Add no arguments
+>>> add_integer(,)
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
+
+# Add empty add_integer
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
