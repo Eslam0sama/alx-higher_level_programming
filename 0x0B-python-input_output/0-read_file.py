@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ A module that contain the function -> read file.
-    for more information about the function read the documentation of the function below.
+    for more information about the function
+    please  read the documentation of the function below.
 """
 
 
@@ -13,4 +14,4 @@ def read_file(filename=""):
     with open(filename, 'r', encoding='utf-8') as f:
 
         content = f.read()
-        print(content)    
+        print(content)
