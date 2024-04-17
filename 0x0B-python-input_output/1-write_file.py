@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ A module that contain the function -> write_file.
-    for more information about the function read the documentation of the function below.
+    for more information about the function
+    please  read the documentation of the function below.
 """
 
 
@@ -16,5 +17,4 @@ def write_file(filename="", text=""):
     """
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(text)
-        
     return len(text)
