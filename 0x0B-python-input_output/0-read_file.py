@@ -10,7 +10,7 @@ def read_file(filename=""):
     Args:
         filename (str): The file to read from.
     """
-    with open("test.txt", 'r', encoding='utf-8') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
 
         content = f.read()
         print(content)    
