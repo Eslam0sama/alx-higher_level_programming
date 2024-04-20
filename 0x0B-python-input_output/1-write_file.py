@@ -12,7 +12,7 @@ def write_file(filename="", text=""):
         filename (str): The file to write to.
         text (str): The text to be written.
 
-    Returns: the number of characters written.
+    returns: the number of characters written.
 
     """
     with open(filename, 'w', encoding='utf-8') as f:
