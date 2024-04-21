@@ -5,7 +5,7 @@ import json
 
 
 def to_json_string(my_obj):
-    """A function that returns an object (Python data structure) represented by a JSON string.
+    """A function that returns an object represented by a JSON string.
 
     Args:
         my_obj (_type_): _description_
